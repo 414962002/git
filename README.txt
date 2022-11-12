@@ -81,7 +81,8 @@ PROCESS
 1.6 - $ git config --local user.email <user email>
 1.4 - $ git add .
 1.5 - $ git commit -m <text>
-1.6 - $ 
+1.6 - $ git remote add origin git@github.com:<user name>/<repo name>.git
+1.7 - $ git push -u origin main  
 
 2
 
