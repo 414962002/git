@@ -2,7 +2,6 @@
 █▄█ █ ░█░
 
 
-
 ★
 
 
@@ -52,31 +51,37 @@ User <email>
 IdentityFile ~/.ssh/private key
 
 
-
 server
 
 1. 
 display the contents of your public-key file
 
-cat ~/.ssh/******.pub
+$ cat ~/.ssh/******.pub
 
 or 
 
 copy the .ssh-public-key to your clipboard
 
-clip < ~/.ssh/******.pub
+$ clip < ~/.ssh/******.pub
 
 2.   
 paste the public-key into the github 
 
-______________________________
-process
+_______
+PROCESS
 
 1
 
-1.1 - create repo inthe github
+1.1 - create repo in the github
 1.2 - copy .ssh address
-1.3 - clone 
+
+1.3 - $ git clone <repo's .ssh address > 
+1.4 - $ git init
+1.5 - $ git config --local user.name <user name>
+1.6 - $ git config --local user.email <user email>
+1.4 - $ git add .
+1.5 - $ git commit -m <text>
+1.6 - $ 
 
 2
 
@@ -99,7 +104,7 @@ add your .ssh-private-key to the ssh-agent
 
 ssh-add ~/.ssh/******
 
-______________________________
+_________________
 important comment
 
 when switching between accounts - 
@@ -107,7 +112,7 @@ clear the keys using the ssh-agent and
 insert the corresponding key
 
 
-______________________________
+______________
 useful command
 
 * which user is currently active in this folder
