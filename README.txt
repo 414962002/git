@@ -1,91 +1,108 @@
-
-
-
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██████╗░██╗████████╗░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░██╗░░░░██╗░░░░██╗░░░░██╗░░░░██╗░░░░██╗░░░░██╗░░░░██╗░░██╔════╝░██║╚══██╔══╝░░██╗░░░░██╗░░░░██╗░░░░██╗░░░░██╗░░░░██╗░░░░██╗░░
-██████╗██████╗██████╗██████╗██████╗██████╗██████╗██████╗██║░░██╗░██║░░░██║░░░██████╗██████╗██████╗██████╗██████╗██████╗██████╗
-╚═██╔═╝╚═██╔═╝╚═██╔═╝╚═██╔═╝╚═██╔═╝╚═██╔═╝╚═██╔═╝╚═██╔═╝██║░░╚██╗██║░░░██║░░░╚═██╔═╝╚═██╔═╝╚═██╔═╝╚═██╔═╝╚═██╔═╝╚═██╔═╝╚═██╔═╝
-░░╚═╝░░░░╚═╝░░░░╚═╝░░░░╚═╝░░░░╚═╝░░░░╚═╝░░░░╚═╝░░░░╚═╝░░╚██████╔╝██║░░░██║░░░░░╚═╝░░░░╚═╝░░░░╚═╝░░░░╚═╝░░░░╚═╝░░░░╚═╝░░░░╚═╝░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░╚═════╝░╚═╝░░░╚═╝░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-
-create a new repository using the terminal      
-without local pass - first initialization  
-(run & search git key: Credential Manager  
-Control Panel\UserAccounts\CredentialManager)    
-
-———————————————————————
-
 █▀▀ █ ▀█▀
 █▄█ █ ░█░
 
+TWO ACCOUNTS - ONE COMP
+______________________________
+preparation
+
+client
+
+1. 
+generating a new .ssh-key
+
+important !
+open console bash in the 
+c/users/user/.ssh
+
+ssh-keygen -t ed25519 -C <your_git_email@example.com>
+
+1.1 
+rename and add password
+
+1.2 
+two files - private and public
+
+c/users/userprofile/.ssh/***
+
+
+3. 
+create file config
+
+# Personal Github
+Host github.com
+User <email>
+IdentityFile ~/.ssh/private key
+
+# Personal Github
+Host github.com
+User <email>
+IdentityFile ~/.ssh/private key
+
+
+server
+
+1. 
+display the contents of your public-key file
+
+cat ~/.ssh/******.pub
+
+or 
+
+copy the .ssh-public-key to your clipboard
+
+clip < ~/.ssh/******.pub
+
+2.   
+paste the public-key into the github 
+
+______________________________
+process
+
 1
-create new repo
-start https://github.com/new  
 
-```
-- open terminal
-- Win + X + A
-```  
-
-create folder
-mkdir <name>
-
-move to folder
-cd <name>
-
-create files
-touch <name>
+1.1 - create repo inthe github
+1.2 - copy .ssh address
+1.3 - clone 
 
 2
-create local git rep
-git init
 
-create user
-git config --local user.name <user name>
+2.1 
+important !
+open console-bash in this folder
 
-create email
-git config --local user.email <user email>
+2.2
+start the ssh-agent
 
-3
-to add a new remote  
-(creates a new remote called origin)
-git remote add origin https://github.com/
-<name user>/<name repo>.git
+eval "$(ssh-agent -s)"
 
-add files or changes
-git add .
+2.3
+clear keys
 
-commit
-git commit -m message
+ssh-add -D
 
-to push commits to server
-(push the commits in the local branch 
-named main to the remote)
-git push -u origin main  
+2.4 
+add your .ssh-private-key to the ssh-agent
 
-                                 ***
-create a new repository using the terminal  
-————————————————————-
-     
+ssh-add ~/.ssh/******
 
-local_create local git repository    
-git init
+______________________________
+important comment
 
-remote_create new web repo  
-start https://github.com/new
+when switching between accounts - 
+clear the keys using the ssh-agent and 
+insert the corresponding key
 
-local_to add a new remote  creates 
-a new remote called origin  
-git remote add origin 
-https://github.com/<name user>/<name repo>.git
 
-local_add files or changes    
-git add .
+______________________________
+useful command
 
-local_commit    
-git commit -m message
+* which user is currently active in this folder
+$ git config user.name
+$ git config user.email
 
-local_to push commits to server  
-push the commits in the local branch 
-named main to the remote named origin  
-git push -u origin main
+* switch to the desired user
+$ git config user.name "_______"
+$ git config user.email "________"
+ᅠ
+
+ᅠ
