@@ -12,7 +12,10 @@ without local pass - first initialization
 Control Panel\UserAccounts\CredentialManager)    
 
 ———————————————————————
-  
+
+█▀▀ █ ▀█▀
+█▄█ █ ░█░
+
 1
 create new repo
 start https://github.com/new  
