@@ -1,10 +1,4 @@
-`new repo`
 
-
-<p align="center">
-  <small>create a new repository using the terminal</small><br>
-  without local pass - first initialization      
-</p>
 
 create a new repository using the terminal      
 without local pass - first initialization  
