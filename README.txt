@@ -1,4 +1,4 @@
-
+𝔠𝔯𝔢𝔞𝔱𝔢 𝔞 𝔫𝔢𝔴 𝔯𝔢𝔭𝔬𝔰𝔦𝔱𝔬𝔯𝔶 𝔲𝔰𝔦𝔫𝔤 𝔱𝔥𝔢 𝔱𝔢𝔯𝔪𝔦𝔫𝔞𝔩  
 
 create a new repository using the terminal      
 without local pass - first initialization  
