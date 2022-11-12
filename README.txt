@@ -1,41 +1,33 @@
 █▀▀ █ ▀█▀      
 █▄█ █ ░█░
 
-
 ★
 ★
-
 
 𝐒𝐒𝐇: 𝐓𝐖𝐎 𝐀𝐂𝐂𝐎𝐔𝐍𝐓𝐒 - 𝐎𝐍𝐄 𝐂𝐎𝐌𝐏  
 
 
-___________
-PREPARATION
+𝐏𝐑𝐄𝐏𝐀𝐑𝐀𝐓𝐈𝐎𝐍
 
-client
+𝐂𝐎𝐌𝐏𝐔𝐓𝐄𝐑 ☆ [𝐋𝐎𝐂𝐀𝐋]
 
-𝟏.
+1.
 generating a new .ssh-key
-
 important !
 open console bash in the 
 c/users/user/.ssh
-
 $ ssh-keygen -t ed25519 -C <your_git_email@example.com>
-
 
 1.1 
 rename and add password
 
-
 1.2 
 two files - private and public
-
-c/users/userprofile/.ssh/***
-
+c/users/user-profile/.ssh/***
+c/users/user-profile/.ssh/***.pub
 
 2. 
-create file config
+create file-config
 
 # Personal Github
 Host github.com
@@ -47,67 +39,50 @@ Host github.com
 User <email>
 IdentityFile ~/.ssh/private key
 
-
-server
-
-1. 
+3. 
 display the contents of your public-key file
-
 $ cat ~/.ssh/******.pub
 
 or 
 
 copy the .ssh-public-key to your clipboard
-
 $ clip < ~/.ssh/******.pub
 
-2.   
-paste the public-key into the github 
 
-_______
-PROCESS
+𝐆𝐈𝐓𝐇𝐔𝐁 ☆ [𝐑𝐄𝐌𝐎𝐓𝐄]
 
-1
+1. create repo - github
+2. paste the .ssh-public-key 
+3. copy .ssh address 
 
-1.1 - create repo in the github
-1.2 - copy .ssh address
 
-1.3 - $ git clone <repo's .ssh address > 
-1.4 - $ git init
-1.5 - $ git config --local user.name <user name>
-1.6 - $ git config --local user.email <user email>
-1.4 - $ git add .
-1.5 - $ git commit -m <text>
-1.6 - $ git remote add origin git@github.com:<user name>/<repo name>.git
-1.7 - $ git push -u origin main  
+𝐂𝐑𝐄𝐀𝐓𝐄 𝐑𝐄𝐏𝐎 ☆ [𝐋𝐎𝐂𝐀𝐋]
 
-2
+1.1 - $ git clone <repo's .ssh address > 
+1.2 - $ git init
+1.3 - $ git config --local user.name <user name>
+1.4 - $ git config --local user.email <user email>
+1.5 - $ git add .
+1.6 - $ git commit -m <text>
 
-2.1 
-important !
-open console-bash in this folder
+1.7 - start the ssh-agent
+$ eval "$(ssh-agent -s)"
 
-2.2
-start the ssh-agent
+1.8 - clear keys
+$ ssh-add -D
 
-eval "$(ssh-agent -s)"
+1.9 - add your .ssh-private-key to the ssh-agent
+$ ssh-add ~/.ssh/******
 
-2.3
-clear keys
+1.10 - $ git remote add origin git@github.com:<user name>/<repo name>.git
+1.11 - $ git push -u origin main  
 
-ssh-add -D
 
-2.4 
-add your .ssh-private-key to the ssh-agent
+𝐈𝐌𝐏𝐎𝐑𝐓𝐀𝐍𝐓
 
-ssh-add ~/.ssh/******
-
-_________________
-important comment
-
-when switching between accounts - 
-clear the keys using the ssh-agent and 
-insert the corresponding key
+→ when switching between accounts - 
+  clear the keys using the ssh-agent and 
+  insert the corresponding key
 
 
 ______________
