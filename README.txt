@@ -1,10 +1,12 @@
-█▀▀ █ ▀█▀
+█▀▀ █ ▀█▀      
 █▄█ █ ░█░
 
+★
 
-𝐓𝐖𝐎 𝐀𝐂𝐂𝐎𝐔𝐍𝐓𝐒 - 𝐎𝐍𝐄 𝐂𝐎𝐌𝐏
-____________________________
-ᴘʀᴇᴘᴀʀᴀᴛɪᴏɴ
+𝐓𝐖𝐎 𝐀𝐂𝐂𝐎𝐔𝐍𝐓𝐒 - 𝐎𝐍𝐄 𝐂𝐎𝐌𝐏  
+
+___________
+PREPARATION
 
 client
 
@@ -15,10 +17,12 @@ important !
 open console bash in the 
 c/users/user/.ssh
 
-ssh-keygen -t ed25519 -C <your_git_email@example.com>
+$ ssh-keygen -t ed25519 -C <your_git_email@example.com>
+
 
 1.1 
 rename and add password
+
 
 1.2 
 two files - private and public
@@ -26,7 +30,7 @@ two files - private and public
 c/users/userprofile/.ssh/***
 
 
-3. 
+2. 
 create file config
 
 # Personal Github
@@ -38,6 +42,7 @@ IdentityFile ~/.ssh/private key
 Host github.com
 User <email>
 IdentityFile ~/.ssh/private key
+
 
 
 server
