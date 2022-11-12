@@ -1,6 +1,10 @@
-█▀▀ █ ▀█▀
-█▄█ █ ░█░
- 
+
+░██████╗░██╗████████╗
+██╔════╝░██║╚══██╔══╝
+██║░░██╗░██║░░░██║░░░
+██║░░╚██╗██║░░░██║░░░
+╚██████╔╝██║░░░██║░░░
+░╚═════╝░╚═╝░░░╚═╝░░░
 
 create a new repository using the terminal      
 without local pass - first initialization  
