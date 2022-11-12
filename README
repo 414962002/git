@@ -1,18 +1,26 @@
-_new repo
+`new repo`
 
 
-create a new repository using the terminal     
-without local pass - first initialization
-(run & search git key: Credential Manager
-Control Panel\UserAccounts\CredentialManager)  
+<p align="center">
+  <small>create a new repository using the terminal</small><br>
+  without local pass - first initialization      
+</p>
+
+create a new repository using the terminal      
+without local pass - first initialization  
+(run & search git key: Credential Manager  
+Control Panel\UserAccounts\CredentialManager)    
+
 ———————————————————————
   
 1
 create new repo
-start https://github.com/new
+start https://github.com/new  
 
-open terminal
-Win + X + A
+```
+- open terminal
+- Win + X + A
+```  
 
 create folder
 mkdir <name>
