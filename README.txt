@@ -1,3 +1,4 @@
+
 █▀▀ █ ▀█▀      
 █▄█ █ ░█░ 
 
@@ -5,6 +6,7 @@
 ★
 ★
 
+𝐃𝐈𝐒𝐏𝐄𝐍𝐒𝐀𝐁𝐋𝐄 𝐄𝐗𝐏𝐋𝐀𝐍𝐀𝐓𝐈𝐎𝐍𝐒
 
 → if the repository is created on a local computer
   in order to send it to a remote server
@@ -79,7 +81,7 @@ c/users/user/.ssh
 $ ssh-keygen -t ed25519 -C <your_git_email@example.com>
 
 [02]
-rename and add password
+rename and add password. optional.
 
 [03]
 two files - private and public
@@ -112,7 +114,7 @@ copy the .ssh-public-key to your clipboard
 $ clip < ~/.ssh/******.pub
 
 [06] 
-paste the .ssh-public-key in the acc/settings
+paste the .ssh-public-key in the github/acc/settings
 
 
 𝐆𝐈𝐓𝐇𝐔𝐁 ☆ [𝐑𝐄𝐌𝐎𝐓𝐄]
@@ -124,10 +126,10 @@ paste the .ssh-public-key in the acc/settings
 𝐂𝐑𝐄𝐀𝐓𝐄 𝐑𝐄𝐏𝐎 ☆ [𝐋𝐎𝐂𝐀𝐋]
 
 [09] - $ git clone <repo's .ssh address > 
-[10] - ls & cd
+[10] - $ cd <repo-folder>
 [11] - $ git config --local user.name <user name>
 [12] - $ git config --local user.email <user email>
-[13] - add any file
+[13] - this step for add, create or modify files
 [14] - $ git add .
 [15] - $ git commit -m <short-incomprehensible-funny text>
 
@@ -155,7 +157,7 @@ $ ssh-add ~/.ssh/******
   clear the keys using the ssh-agent and 
   insert the corresponding private-key
   
-→ [16, 17, 18, 19] - it is enough to use it once - 
+→ [16, 17, 18] - it is enough to use it once - 
   if you do not switch to another account
 
 
@@ -169,7 +171,6 @@ $ git config user.email
 $ git config user.name <user name>
 $ git config user.email <user email>
 ᅠ
-E̶x̶a̶m̶p̶l̶e̶
 
 𝐃𝐈𝐒𝐏𝐄𝐍𝐒𝐀𝐁𝐋𝐄 𝐒𝐓𝐀𝐑𝐒
 
