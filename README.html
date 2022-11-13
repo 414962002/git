@@ -64,29 +64,27 @@ paste the .ssh-public-key in the acc/settings
 𝐂𝐑𝐄𝐀𝐓𝐄 𝐑𝐄𝐏𝐎 ☆ [𝐋𝐎𝐂𝐀𝐋]
 
 [09] - $ git clone <repo's .ssh address > 
+[10] - $ git config --local user.name <user name>
+[11] - $ git config --local user.email <user email>
+[12] - add any file
+[13] - $ git commit -a -m <short-incomprehensible-funny text>
 
-[11] - $ git config --local user.name <user name>
-[12] - $ git config --local user.email <user email>
-[13] - $ git add .
-[14] - $ git commit -m <text>
-
-[15]
+[14]
 start the ssh-agent
 
 $ eval "$(ssh-agent -s)"
 
-[16]
+[15]
 clear keys
 
 $ ssh-add -D
 
-[17]
+[16]
 add your .ssh-private-key to the ssh-agent
 
 $ ssh-add ~/.ssh/******
 
-[18] - $ git remote add origin git@github.com:<user name>/<repo name>.git
-[19] - $ git push -u origin main  
+[17] - $ git push -u origin main  
 
 
 𝐈𝐌𝐏𝐎𝐑𝐓𝐀𝐍𝐓
