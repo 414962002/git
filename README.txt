@@ -1,11 +1,71 @@
 █▀▀ █ ▀█▀      
-█▄█ █ ░█░
+█▄█ █ ░█░ 
+
 
 ★
 ★
 
-𝐒𝐒𝐇: 𝐓𝐖𝐎 𝐀𝐂𝐂𝐎𝐔𝐍𝐓𝐒 - 𝐎𝐍𝐄 𝐂𝐎𝐌𝐏  
 
+→ if the repository is created on a local computer
+  in order to send it to a remote server
+
+  these commands will be used
+
+[01] - $ git init
+[02] - $ git config --local user.name <user name>
+[03] - $ git config --local user.email <user email>
+[04] - this step for add, create or modify files
+[05] - $ git add .
+[06] - $ git commit -m "lorem ipsum"
+[07] - $ git branch -M main
+
+[08] 
+
+.ssh
+$ git remote add origin <.ssh-address-repo>
+
+or
+
+https
+$ git remote add origin <https-address-repo>
+
+[09] - git push -u origin main
+
+★
+
+→ if the repository is created on a remote server
+  in order to copy it to a local computer
+
+  these commands will be used
+
+[01]
+
+.ssh
+$ git clone  <.ssh-address-repo>
+
+  or
+  
+https
+$ git clone  <https-address-repo>
+
+[02] - $ cd <repo-folder>
+[03] - $ git config --local user.name <user name>
+[04] - $ git config --local user.email <user email>
+[04] - this step for add, create or modify files
+[05] - $ git add .
+[06] - $ git commit -m "lorem ipsum"
+[07] - $ git push
+
+
+★
+★
+
+
+𝐓𝐖𝐎 𝐀𝐂𝐂𝐎𝐔𝐍𝐓𝐒 - 𝐎𝐍𝐄 𝐂𝐎𝐌𝐏
+
+attention!
+the example considers the following conditions to create:
+.ssh & clone
 
 𝐂𝐎𝐌𝐏𝐔𝐓𝐄𝐑 ☆ [𝐋𝐎𝐂𝐀𝐋]
 
@@ -86,7 +146,7 @@ add your .ssh-private-key to the ssh-agent
 
 $ ssh-add ~/.ssh/******
 
-[19] - $ git push -u origin main  
+[19] - $ git push
 
 
 𝐃𝐈𝐒𝐏𝐄𝐍𝐒𝐀𝐁𝐋𝐄 𝐄𝐗𝐏𝐋𝐀𝐍𝐀𝐓𝐈𝐎𝐍𝐒
@@ -109,6 +169,7 @@ $ git config user.email
 $ git config user.name <user name>
 $ git config user.email <user email>
 ᅠ
+E̶x̶a̶m̶p̶l̶e̶
 
 𝐃𝐈𝐒𝐏𝐄𝐍𝐒𝐀𝐁𝐋𝐄 𝐒𝐓𝐀𝐑𝐒
 
