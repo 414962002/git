@@ -68,13 +68,19 @@ $ clip < ~/.ssh/******.pub
 [13] - $ git add .
 [14] - $ git commit -m <text>
 
-[15] - start the ssh-agent
+[15]
+start the ssh-agent
+
 $ eval "$(ssh-agent -s)"
 
-[16] - clear keys
+[16]
+clear keys
+
 $ ssh-add -D
 
-[17] - add your .ssh-private-key to the ssh-agent
+[17]
+add your .ssh-private-key to the ssh-agent
+
 $ ssh-add ~/.ssh/******
 
 [18] - $ git remote add origin git@github.com:<user name>/<repo name>.git
