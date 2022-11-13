@@ -9,7 +9,7 @@
 
 𝐂𝐎𝐌𝐏𝐔𝐓𝐄𝐑 ☆ [𝐋𝐎𝐂𝐀𝐋]
 
-[𝟎𝟏]
+[01]
 generating a .ssh-key
 
 important !
@@ -18,7 +18,7 @@ c/users/user/.ssh
 
 $ ssh-keygen -t ed25519 -C <your_git_email@example.com>
 
-[𝟎𝟐]
+[02]
 rename and add password
 
 [03]
@@ -98,11 +98,11 @@ $ ssh-add ~/.ssh/******
 
 useful commands
 
-→ which user is currently active in this folder
+  which user is currently active in this folder
 $ git config user.name
 $ git config user.email
 
-→ switch to the desired user
+  switch to the desired user
 $ git config user.name <user name>
 $ git config user.email <user email>
 ᅠ
