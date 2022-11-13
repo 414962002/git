@@ -64,44 +64,45 @@ paste the .ssh-public-key in the acc/settings
 𝐂𝐑𝐄𝐀𝐓𝐄 𝐑𝐄𝐏𝐎 ☆ [𝐋𝐎𝐂𝐀𝐋]
 
 [09] - $ git clone <repo's .ssh address > 
-[10] - $ git config --local user.name <user name>
-[11] - $ git config --local user.email <user email>
-[12] - add any file
-[13] - $ git commit -a -m <short-incomprehensible-funny text>
+[10] - ls & cd
+[11] - $ git config --local user.name <user name>
+[12] - $ git config --local user.email <user email>
+[13] - add any file
+[14] - $ git add .
+[15] - $ git commit -m <short-incomprehensible-funny text>
 
-[14]
+[16]
 start the ssh-agent
 
 $ eval "$(ssh-agent -s)"
 
-[15]
+[17]
 clear keys
 
 $ ssh-add -D
 
-[16]
+[18]
 add your .ssh-private-key to the ssh-agent
 
 $ ssh-add ~/.ssh/******
 
-[17] - $ git push -u origin main  
+[19] - $ git push -u origin main  
 
 
 𝐈𝐌𝐏𝐎𝐑𝐓𝐀𝐍𝐓
 
 → when switching between accounts - 
   clear the keys using the ssh-agent and 
-  insert the corresponding key
+  insert the corresponding private-key
 
 
-______________
 useful commands
 
-  which user is currently active in this folder
+→ which user is currently active in this folder
 $ git config user.name
 $ git config user.email
 
-  switch to the desired user
+→ switch to the desired user
 $ git config user.name <user name>
 $ git config user.email <user email>
 ᅠ
