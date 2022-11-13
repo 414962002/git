@@ -97,11 +97,11 @@ $ ssh-add ~/.ssh/******
 ______________
 useful commands
 
-* which user is currently active in this folder
+  which user is currently active in this folder
 $ git config user.name
 $ git config user.email
 
-* switch to the desired user
+  switch to the desired user
 $ git config user.name <user name>
 $ git config user.email <user email>
 ᅠ
