@@ -89,14 +89,17 @@ $ ssh-add ~/.ssh/******
 [19] - $ git push -u origin main  
 
 
-𝐈𝐌𝐏𝐎𝐑𝐓𝐀𝐍𝐓
+𝐃𝐈𝐒𝐏𝐄𝐍𝐒𝐀𝐁𝐋𝐄 𝐄𝐗𝐏𝐋𝐀𝐍𝐀𝐓𝐈𝐎𝐍𝐒
 
 → when switching between accounts - 
   clear the keys using the ssh-agent and 
   insert the corresponding private-key
+  
+→ [16, 17, 18, 19] - it is enough to use it once - 
+  if you do not switch to another account
 
 
-useful commands
+𝐃𝐈𝐒𝐏𝐄𝐍𝐒𝐀𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒
 
   which user is currently active in this folder
 $ git config user.name
@@ -106,5 +109,8 @@ $ git config user.email
 $ git config user.name <user name>
 $ git config user.email <user email>
 ᅠ
+
+𝐃𝐈𝐒𝐏𝐄𝐍𝐒𝐀𝐁𝐋𝐄 𝐒𝐓𝐀𝐑𝐒
+
 ★
 ★
