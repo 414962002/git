@@ -18,7 +18,7 @@ part two
 → if the repository is created on a local computer
   in order to send it to a remote server
 
-→ these commands will be used
+→ these [09] commands will be used
 
 [01] - $ git init
 [02] - $ git config --local user.name <user name>
@@ -44,7 +44,7 @@ $ git remote add origin <https-address-repo>
 → if the repository is created on a remote server
   in order to copy it to a local computer
 
-→ these commands will be used
+→ these [08] commands will be used
 
 [01]
 
@@ -59,10 +59,10 @@ $ git clone  <https-address-repo>
 [02] - $ cd <repo-folder>
 [03] - $ git config --local user.name <user name>
 [04] - $ git config --local user.email <user email>
-[04] - this step for add, create or modify files
-[05] - $ git add .
-[06] - $ git commit -m "lorem ipsum"
-[07] - $ git push
+[05] - this step for add, create or modify files
+[06] - $ git add .
+[07] - $ git commit -m "lorem ipsum"
+[08] - $ git push
 
 
 ☆
