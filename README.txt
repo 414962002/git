@@ -18,7 +18,7 @@ part two
 → if the repository is created on a local computer
   in order to send it to a remote server
 
-→ these [09] commands will be used
+  these [09] commands will be used
 
 [01] - $ git init
 [02] - $ git config --local user.name <user name>
