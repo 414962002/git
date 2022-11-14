@@ -10,18 +10,19 @@ part one
 part two
 𝐓𝐖𝐎 𝐀𝐂𝐂𝐎𝐔𝐍𝐓𝐒 - 𝐎𝐍𝐄 𝐂𝐎𝐌𝐏
 
-☆
-★
-★
+
+
+☆☆☆
+
 
 
 𝐂𝐑𝐄𝐀𝐓𝐈𝐍𝐆 𝐯𝐬 𝐂𝐋𝐎𝐍𝐈𝐍𝐆
 
 
-  if the repository is created on a local computer
+→ if the repository is created on a local computer
   in order to send it to a remote server
 
-  these commands will be used
+→ these commands will be used
 
 [01] - $ git init
 [02] - $ git config --local user.name <user name>
@@ -43,12 +44,12 @@ $ git remote add origin <https-address-repo>
 
 [09] - git push -u origin main
 
-☆
 
-  if the repository is created on a remote server
+
+→ if the repository is created on a remote server
   in order to copy it to a local computer
 
-  these commands will be used
+→ these commands will be used
 
 [01]
 
@@ -69,16 +70,14 @@ $ git clone  <https-address-repo>
 [07] - $ git push
 
 
-★
-☆
-★
+☆☆☆
 
 
 𝐓𝐖𝐎 𝐀𝐂𝐂𝐎𝐔𝐍𝐓𝐒 - 𝐎𝐍𝐄 𝐂𝐎𝐌𝐏
 
-attention!
-the example considers the following conditions to create:
-.ssh & clone
+→ attention!
+  the example considers the following conditions to create:
+  .ssh & clone
 
 
 ｡𝘀𝘀𝗵-𝗸𝗲𝘆 𝗰𝗿𝗲𝗮𝘁𝗶𝗻𝗴 - 𝗰𝗼𝗺𝗽𝘂𝘁𝗲𝗿 [𝗹𝗼𝗰𝗮𝗹]
@@ -177,15 +176,16 @@ $ ssh-add ~/.ssh/******
 
 
 → which user is currently active in this folder
-$ git config user.name
-$ git config user.email
+  $ git config user.name
+  $ git config user.email
 
 → switch to the desired user
-$ git config user.name <user name>
-$ git config user.email <user email>
+  $ git config user.name <user name>
+  $ git config user.email <user email>
 ᅠ
 
 
 
 ★
-★
+☆
+→ 
