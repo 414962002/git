@@ -3,12 +3,22 @@
 █▄█ █ ░█░ 
 
 
+
+part one
+𝐂𝐑𝐄𝐀𝐓𝐈𝐍𝐆 𝐯𝐬 𝐂𝐋𝐎𝐍𝐈𝐍𝐆
+
+part two
+𝐓𝐖𝐎 𝐀𝐂𝐂𝐎𝐔𝐍𝐓𝐒 - 𝐎𝐍𝐄 𝐂𝐎𝐌𝐏
+
+☆
 ★
 ★
 
-𝐃𝐈𝐒𝐏𝐄𝐍𝐒𝐀𝐁𝐋𝐄 𝐄𝐗𝐏𝐋𝐀𝐍𝐀𝐓𝐈𝐎𝐍𝐒
 
-→ if the repository is created on a local computer
+𝐂𝐑𝐄𝐀𝐓𝐈𝐍𝐆 𝐯𝐬 𝐂𝐋𝐎𝐍𝐈𝐍𝐆
+
+
+  if the repository is created on a local computer
   in order to send it to a remote server
 
   these commands will be used
@@ -33,9 +43,9 @@ $ git remote add origin <https-address-repo>
 
 [09] - git push -u origin main
 
-★
+☆
 
-→ if the repository is created on a remote server
+  if the repository is created on a remote server
   in order to copy it to a local computer
 
   these commands will be used
@@ -60,6 +70,7 @@ $ git clone  <https-address-repo>
 
 
 ★
+☆
 ★
 
 
@@ -69,7 +80,8 @@ attention!
 the example considers the following conditions to create:
 .ssh & clone
 
-𝐂𝐎𝐌𝐏𝐔𝐓𝐄𝐑 ☆ [𝐋𝐎𝐂𝐀𝐋]
+
+｡𝘀𝘀𝗵-𝗸𝗲𝘆 𝗰𝗿𝗲𝗮𝘁𝗶𝗻𝗴 - 𝗰𝗼𝗺𝗽𝘂𝘁𝗲𝗿 [𝗹𝗼𝗰𝗮𝗹]
 
 [01]
 generating a .ssh-key
@@ -90,8 +102,10 @@ c/users/user-profile/.ssh/***
 c/users/user-profile/.ssh/***.pub
 
 [04] 
-create file-config
+create - config
+without extention
 
+```
 # Personal Github
 Host github.com
 User <email>
@@ -101,6 +115,7 @@ IdentityFile ~/.ssh/private key
 Host github.com
 User <email>
 IdentityFile ~/.ssh/private key
+```
 
 [05] 
 display the contents of your public-key file
@@ -117,13 +132,13 @@ $ clip < ~/.ssh/******.pub
 paste the .ssh-public-key in the github/acc/settings
 
 
-𝐆𝐈𝐓𝐇𝐔𝐁 ☆ [𝐑𝐄𝐌𝐎𝐓𝐄]
+𝗿𝗲𝗽𝗼 𝗰𝗿𝗲𝗮𝘁𝗶𝗻𝗴 - 𝗴𝗶𝘁𝗵𝘂𝗯 [𝗿𝗲𝗺𝗼𝘁𝗲]
 
 [07] create repo - github
 [08] copy .ssh address 
 
 
-𝐂𝐑𝐄𝐀𝐓𝐄 𝐑𝐄𝐏𝐎 ☆ [𝐋𝐎𝐂𝐀𝐋]
+𝗿𝗲𝗽𝗼 𝗰𝗿𝗲𝗮𝘁𝗶𝗻𝗴 - 𝗰𝗼𝗺𝗽𝘂𝘁𝗲𝗿 [𝗹𝗼𝗰𝗮𝗹]
 
 [09] - $ git clone <repo's .ssh address > 
 [10] - $ cd <repo-folder>
@@ -151,7 +166,7 @@ $ ssh-add ~/.ssh/******
 [19] - $ git push
 
 
-𝐃𝐈𝐒𝐏𝐄𝐍𝐒𝐀𝐁𝐋𝐄 𝐄𝐗𝐏𝐋𝐀𝐍𝐀𝐓𝐈𝐎𝐍𝐒
+𝗱𝗶𝘀𝗽𝗲𝗻𝘀𝗮𝗯𝗹𝗲 𝗲𝘅𝗽𝗹𝗮𝗻𝗮𝘁𝗶𝗼𝗻
 
 → when switching between accounts - 
   clear the keys using the ssh-agent and 
@@ -161,18 +176,16 @@ $ ssh-add ~/.ssh/******
   if you do not switch to another account
 
 
-𝐃𝐈𝐒𝐏𝐄𝐍𝐒𝐀𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒
-
-  which user is currently active in this folder
+→ which user is currently active in this folder
 $ git config user.name
 $ git config user.email
 
-  switch to the desired user
+→ switch to the desired user
 $ git config user.name <user name>
 $ git config user.email <user email>
 ᅠ
 
-𝐃𝐈𝐒𝐏𝐄𝐍𝐒𝐀𝐁𝐋𝐄 𝐒𝐓𝐀𝐑𝐒
+
 
 ★
 ★
